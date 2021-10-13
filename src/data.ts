@@ -46,7 +46,7 @@ export const membership = {
   ],
 };
 export const PROJECT_VISION = {
-  title: "misson Statement",
+  title: "VISION FOR THE PROJECT",
   paragraphList: [
     "A few things we'd like to implement if the community agrees:",
     "1) Clothing brand - We have access to high quality products that we can use for merch. Alternatively, we also have manufacturers in China that can customize anything and everything we want to have made.",

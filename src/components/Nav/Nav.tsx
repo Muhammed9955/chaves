@@ -12,6 +12,7 @@ interface Props {
   scrollToAboutUs: any;
   scrollToMembership: any;
   scrollToMissionStatement: any;
+  scrollToVision: any;
   homeRef: any;
 }
 
@@ -20,6 +21,7 @@ const Nav: React.FC<Props> = ({
   scrollToAboutUs,
   scrollToMembership,
   scrollToMissionStatement,
+  scrollToVision,
   homeRef,
 }) => {
   const [show, setShow] = useState(false);
@@ -38,11 +40,14 @@ const Nav: React.FC<Props> = ({
           <p className="mr_m " onClick={() => scrollToMembership()}>
             membership
           </p>
+          <p className="mr_m " onClick={() => scrollToVision()}>
+            Vision
+          </p>
           <p className="mr_m " onClick={() => scrollToMissionStatement()}>
             misson statement
           </p>
         </div>
-        <div className="routes">
+        <div className="icons">
           <SiDiscord className="mr_m icon" />
           <AiOutlineInstagram className="mr_m icon" />
           <AiOutlineTwitter className="mr_m icon" />
@@ -74,6 +79,9 @@ const Nav: React.FC<Props> = ({
             </p>
             <p className="navMob_item" onClick={() => scrollToMembership()}>
               membership
+            </p>
+            <p className="navMob_item" onClick={() => scrollToVision()}>
+              Vision
             </p>
             <p
               className="navMob_item"

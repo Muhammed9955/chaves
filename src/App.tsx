@@ -12,6 +12,7 @@ function App() {
   const utilityRef: React.MutableRefObject<any> = useRef(null);
   const membership: React.MutableRefObject<any> = useRef(null);
   const missionStatement: React.MutableRefObject<any> = useRef(null);
+  const visionRef: React.MutableRefObject<any> = useRef(null);
 
   // routes func
   const scrollToHome = () =>
@@ -22,6 +23,8 @@ function App() {
     aboutUsRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToMembership = () =>
     membership.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToVision = () =>
+    visionRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToMissionStatement = () =>
     missionStatement.current.scrollIntoView({ behavior: "smooth" });
 
@@ -31,6 +34,7 @@ function App() {
         scrollToUtility={scrollToUtility}
         scrollToAboutUs={scrollToAboutUs}
         scrollToMembership={scrollToMembership}
+        scrollToVision={scrollToVision}
         scrollToMissionStatement={scrollToMissionStatement}
         homeRef={homeRef}
       />
@@ -40,6 +44,7 @@ function App() {
         utilityRef={utilityRef}
         membership={membership}
         missionStatement={missionStatement}
+        visionRef={visionRef}
       />
       <Footer scrollToHome={scrollToHome} />
     </div>

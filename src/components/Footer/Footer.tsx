@@ -13,7 +13,7 @@ const Footer: React.FC<Props> = ({ scrollToHome }) => {
   return (
     <div className="footer">
       <div className="flex">
-        <div className="routes">
+        <div className="footer_icons">
           <SiDiscord className="mr_m icon" />
           <AiOutlineInstagram className="mr_m icon" />
           <AiOutlineTwitter className="mr_m icon" />

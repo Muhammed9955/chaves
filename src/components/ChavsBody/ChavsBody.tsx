@@ -6,7 +6,7 @@ import {
   head7,
   head8,
   head9,
-  membership,
+  membership as membershipData,
   missonStatement,
   project_utlits,
   PROJECT_VISION,
@@ -20,6 +20,7 @@ interface Props {
   utilityRef: any;
   membership: any;
   missionStatement: any;
+  visionRef: any;
 }
 
 const Chavs_body: React.FC<Props> = ({
@@ -27,6 +28,7 @@ const Chavs_body: React.FC<Props> = ({
   utilityRef,
   membership,
   missionStatement,
+  visionRef,
 }) => {
   return (
     <div className="chavsBody">
@@ -53,17 +55,19 @@ const Chavs_body: React.FC<Props> = ({
       <div className="sapcer" />
       <div ref={membership}>
         <Description
-          title={membership.title}
-          paragraph={membership.paragraph}
+          title={membershipData.title}
+          paragraph={membershipData.paragraph}
           rightImg={true}
           img={head7}
         />
       </div>
       <div className="sapcer" />
-      <ChavsInfo
-        title={PROJECT_VISION.title}
-        paragraphList={PROJECT_VISION.paragraphList}
-      />
+      <div ref={visionRef}>
+        <ChavsInfo
+          title={PROJECT_VISION.title}
+          paragraphList={PROJECT_VISION.paragraphList}
+        />
+      </div>
       <div className="sapcer" />
       <div ref={missionStatement}>
         <ChavsInfo
