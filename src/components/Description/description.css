@@ -1,0 +1,48 @@
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10% 5% 20%;
+}
+.description_img {
+  height: 60vh;
+  width: 30vw;
+  object-fit: contain;
+}
+.description_content {
+  width: 35vw;
+}
+.description_content p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+.description_content h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .description {
+    padding: 5%;
+  }
+  .description_img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .description_content {
+    width: 100%;
+  }
+  .description_img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

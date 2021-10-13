@@ -1,0 +1,41 @@
+.chavsBody {
+  position: relative;
+}
+.head8 {
+  position: absolute;
+  bottom: 0;
+  left: -8%;
+  width: 36vw;
+}
+.head9 {
+  position: absolute;
+  bottom: 0;
+  right: -8%;
+  width: 36vw;
+}
+.sapcerTop {
+  height: 20vh;
+}
+.sapcer {
+  height: 30vh;
+}
+@media only screen and (max-width: 1024px) {
+  .head8 {
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 45vw;
+  }
+  .head9 {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    width: 45vw;
+  }
+  .sapcerTop {
+    height: 5vh;
+  }
+  .sapcer {
+    height: 10vh;
+  }
+}

@@ -1,0 +1,21 @@
+.chavsInfo {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.smallWidth {
+  width: 50%;
+  margin: auto;
+}
+.chavsInfo h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.chavsInfo p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+

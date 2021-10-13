@@ -1,0 +1,30 @@
+.firstLook {
+  margin: 10vh 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  /* background: red; */
+}
+.fl_img {
+  width: 30vw;
+}
+.imgs {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.center {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .imgs {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fl_img {
+    width: 80vw;
+    margin-bottom: 2rem;
+  }
+}

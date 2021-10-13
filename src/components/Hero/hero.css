@@ -1,0 +1,78 @@
+.hero {
+  padding: 0 10%;
+  height: 100vh;
+  background: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero h1,
+p {
+  margin: 0;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+.hero_btn {
+  color: white;
+  background: black;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 3rem;
+}
+.hero_btn:hover {
+  background: cyan;
+}
+.head1 {
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  width: 30vw;
+}
+.head2 {
+  position: absolute;
+  bottom: 0;
+  right: 12%;
+  width: 30vw;
+}
+.centerText {
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: 50vh;
+  }
+  .head1 {
+    left: 5%;
+    width: 40vw;
+  }
+  .head2 {
+    right: 5%;
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 70vh;
+  }
+  .head1 {
+    left: 5%;
+    width: 40vw;
+  }
+  .head1 {
+    left: -10%;
+    width: 50vw;
+  }
+  .head2 {
+    right: -10%;
+    width: 50vw;
+  }
+  .hero_btn {
+    font-size: 0.9rem !important;
+    /* padding: 0.5rem; */
+  }
+}
