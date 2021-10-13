@@ -19,3 +19,9 @@
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .smallWidth {
+    width: 90%;
+    margin: 0 0 10vh 0;
+  }
+}
