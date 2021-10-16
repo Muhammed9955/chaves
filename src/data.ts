@@ -8,6 +8,8 @@ import head6_Img from "./assets/head6.png";
 import head7_Img from "./assets/head7.png";
 import head8_Img from "./assets/head8.png";
 import head9_Img from "./assets/head9.png";
+import head10_Img from "./assets/head10.png";
+import head11_Img from "./assets/head11.png";
 
 export const head1 = head1_Img;
 export const head2 = head2_Img;
@@ -18,6 +20,8 @@ export const head6 = head6_Img;
 export const head7 = head7_Img;
 export const head8 = head8_Img;
 export const head9 = head9_Img;
+export const head10 = head10_Img;
+export const head11 = head11_Img;
 
 export const img = notFound;
 export const chavsInfo = {

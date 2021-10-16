@@ -1,17 +1,23 @@
 .mainBtn {
   color: white;
   background: black;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
   border: none;
   margin: 0;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 }
 .orangeBg {
   background: var(--orange);
 }
-.mainBtn:hover {
-  background: cyan;
+.blueHover:hover {
+  background: var(--blue);
 }
+.orangeHover:hover {
+  background: var(--orange);
+}
+
 @media only screen and (max-width: 600px) {
   .mainBtn {
     font-size: 1rem;

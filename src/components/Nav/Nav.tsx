@@ -56,7 +56,7 @@ const Nav: React.FC<Props> = ({
 
       <div className="nav_mob">
         <div className="nav_mob">
-          <Title text="chavs" />{" "}
+          <Title text="chavs" />
           {show ? (
             <IoMdClose className="navMob_icon" onClick={() => setShow(!show)} />
           ) : (

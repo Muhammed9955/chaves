@@ -1,0 +1,70 @@
+.modal {
+  position: absolute;
+  top: auto;
+  right: auto;
+  z-index: 9999;
+  width: 50vw;
+  height: auto;
+  background: white;
+  margin: auto;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding-bottom: 1rem;
+}
+.modalHeader {
+  height: auto;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+.modalBtn {
+  color: white;
+  background: black;
+  padding: 0.5rem 6rem;
+  font-size: 1.3rem;
+  border: none;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+.modalInput {
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  min-width: 15vw;
+  margin-right: 2rem;
+}
+.modalBtn:hover {
+  background: var(--orange);
+  cursor: pointer;
+}
+
+.modal_Icon {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  font-size: 2rem;
+}
+.modal_body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .modal_body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .modalInput {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .modal {
+    width: 80vw;
+  }
+}

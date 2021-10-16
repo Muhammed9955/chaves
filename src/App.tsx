@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import ChavsBody from "./components/ChavsBody/ChavsBody";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
+import HeroSale from "./components/HeroSale/HeroSale";
 import Nav from "./components/Nav/Nav";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
     visionRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToMissionStatement = () =>
     missionStatement.current.scrollIntoView({ behavior: "smooth" });
-
+  const [showHeroSale, setShowHeroSale] = useState(true);
   return (
     <div className="App">
       <Nav
@@ -38,7 +39,15 @@ function App() {
         scrollToMissionStatement={scrollToMissionStatement}
         homeRef={homeRef}
       />
-      <Hero />
+      {showHeroSale ? (
+        <HeroSale
+          showHeroSale={showHeroSale}
+          setShowHeroSale={setShowHeroSale}
+        />
+      ) : (
+        <Hero showHeroSale={showHeroSale} setShowHeroSale={setShowHeroSale} />
+      )}
+      {console.log({ showHeroSale })}
       <ChavsBody
         aboutUsRef={aboutUsRef}
         utilityRef={utilityRef}

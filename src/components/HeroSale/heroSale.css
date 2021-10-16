@@ -1,7 +1,7 @@
-.hero {
+.heroSale {
   padding: 0 10%;
   height: 90vh;
-  background: var(--orange);
+  background: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,14 +9,14 @@
   position: relative;
 }
 
-.hero h1,
+.heroSale h1,
 p {
   margin: 0;
 }
-.hero p {
-  font-size: 1.3rem;
+.heroSale p {
+  /* font-size: 1.3rem; */
 }
-.hero_btn {
+.heroSale_btn {
   color: white;
   background: black;
   padding: 1rem 2rem;
@@ -24,8 +24,8 @@ p {
   border: none;
   margin-top: 3rem;
 }
-.hero_btn:hover {
-  background: cyan;
+.heroSale_btn:hover {
+  background: var(--orange);
 }
 .head1 {
   position: absolute;
@@ -42,8 +42,9 @@ p {
 .centerText {
   text-align: center;
 }
+
 @media only screen and (max-width: 1024px) {
-  .hero {
+  .heroSale {
     height: 50vh;
   }
   .head1 {
@@ -56,7 +57,7 @@ p {
   }
 }
 @media only screen and (max-width: 600px) {
-  .hero {
+  .heroSale {
     height: 90vh;
   }
   .head1 {
@@ -71,7 +72,7 @@ p {
     right: -10%;
     width: 50vw;
   }
-  .hero_btn {
+  .heroSale_btn {
     font-size: 0.9rem !important;
     /* padding: 0.5rem; */
   }

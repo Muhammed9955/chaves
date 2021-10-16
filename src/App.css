@@ -1,9 +1,11 @@
 :root {
   --orange: #ff7d00;
+  --blue: #3185fc;
 }
 .App {
   color: white;
   background-color: black;
+  width: 100vw;
 }
 
 .mr_m {
