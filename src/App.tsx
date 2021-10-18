@@ -1,10 +1,10 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import ChavsBody from "./components/ChavsBody/ChavsBody";
 import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
-import HeroSale from "./components/HeroSale/HeroSale";
 import Nav from "./components/Nav/Nav";
+import Home from "./pages/Home";
+import Mint from "./pages/Mint";
 
 function App() {
   //routes refs
@@ -28,34 +28,35 @@ function App() {
     visionRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToMissionStatement = () =>
     missionStatement.current.scrollIntoView({ behavior: "smooth" });
-  const [showHeroSale, setShowHeroSale] = useState(true);
+
   return (
     <div className="App">
-      <Nav
-        scrollToUtility={scrollToUtility}
-        scrollToAboutUs={scrollToAboutUs}
-        scrollToMembership={scrollToMembership}
-        scrollToVision={scrollToVision}
-        scrollToMissionStatement={scrollToMissionStatement}
-        homeRef={homeRef}
-      />
-      {showHeroSale ? (
-        <HeroSale
-          showHeroSale={showHeroSale}
-          setShowHeroSale={setShowHeroSale}
-        />
-      ) : (
-        <Hero showHeroSale={showHeroSale} setShowHeroSale={setShowHeroSale} />
-      )}
-      {console.log({ showHeroSale })}
-      <ChavsBody
-        aboutUsRef={aboutUsRef}
-        utilityRef={utilityRef}
-        membership={membership}
-        missionStatement={missionStatement}
-        visionRef={visionRef}
-      />
-      <Footer scrollToHome={scrollToHome} />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Nav
+              scrollToUtility={scrollToUtility}
+              scrollToAboutUs={scrollToAboutUs}
+              scrollToMembership={scrollToMembership}
+              scrollToVision={scrollToVision}
+              scrollToMissionStatement={scrollToMissionStatement}
+              homeRef={homeRef}
+            />
+            <Home
+              aboutUsRef={aboutUsRef}
+              utilityRef={utilityRef}
+              membership={membership}
+              missionStatement={missionStatement}
+              visionRef={visionRef}
+            />
+            <Footer scrollToHome={scrollToHome} />
+          </Route>
+          <Route exact path="/mint">
+            <Nav mintNav={true} />
+            <Mint />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

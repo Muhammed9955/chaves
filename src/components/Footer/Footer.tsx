@@ -14,9 +14,15 @@ const Footer: React.FC<Props> = ({ scrollToHome }) => {
     <div className="footer">
       <div className="flex">
         <div className="footer_icons">
-          <SiDiscord className="mr_m icon" />
-          <AiOutlineInstagram className="mr_m icon" />
-          <AiOutlineTwitter className="mr_m icon" />
+          <a href="http://discord.gg/QgjVarh9fe" className="mr_m icon">
+            <SiDiscord />
+          </a>
+          <a href="http://instagram.com/chavsio" className="mr_m icon">
+            <AiOutlineInstagram />
+          </a>
+          <a href="http://twitter.com/chavsio" className="mr_m icon">
+            <AiOutlineTwitter />
+          </a>
         </div>
         <Title text="chavs" />
         <MainButton text="BUY NOW" />

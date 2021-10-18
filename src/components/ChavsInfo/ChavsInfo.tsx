@@ -13,11 +13,11 @@ const ChavsInfo: React.FC<Props> = ({ title, paragraphList, smallWidth }) => {
         <Title text={`${title}`} fontSize="3rem" />
       </div>
       <div style={{ height: "10vh" }} />
-      {paragraphList.map((i) => (
-        <>
-          <p>{i} </p>
+      {paragraphList.map((i, n) => (
+        <div key={n}>
+          <p>{i}</p>
           <br />
-        </>
+        </div>
       ))}
     </div>
   );

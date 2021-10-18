@@ -1,13 +1,11 @@
+import { Link } from "react-router-dom";
 import { head1, head2 } from "../../data";
 import MainButton from "../MainBtn/MainBtn";
 import Title from "../Title/Title";
 import "./hero.css";
-interface Props {
-  showHeroSale: any;
-  setShowHeroSale: any;
-}
+interface Props {}
 
-const Hero: React.FC<Props> = ({ showHeroSale, setShowHeroSale }) => {
+const Hero: React.FC<Props> = () => {
   return (
     <div className="hero">
       <div className="centerText">
@@ -22,10 +20,9 @@ const Hero: React.FC<Props> = ({ showHeroSale, setShowHeroSale }) => {
       <br />
       <br />
       <br />
-      <MainButton
-        text="BUY NOW"
-        onClick={() => setShowHeroSale(true)}
-      />
+      <Link to="/mint">
+        <MainButton text="BUY NOW" />
+      </Link>
       <img src={head1} alt="head1" className="head1" />
       <img src={head2} alt="head2" className="head2" />
       {/* <div style={{ marginTop: "20vh" }} /> */}

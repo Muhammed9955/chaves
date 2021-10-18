@@ -7,7 +7,7 @@ import head5_Img from "./assets/head5.png";
 import head6_Img from "./assets/head6.png";
 import head7_Img from "./assets/head7.png";
 import head8_Img from "./assets/head8.png";
-import head9_Img from "./assets/head9.png";
+import head9_Img from "./assets/head90.png";
 import head10_Img from "./assets/head10.png";
 import head11_Img from "./assets/head11.png";
 

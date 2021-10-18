@@ -19,7 +19,7 @@ const Modal: React.FC<Props> = ({ setShowModal }) => {
       ) : (
         <div className="modalHeader">
           <Title text="Mint your Chaves" size="md" />
-          <p>6798/10,000 CHAVS minted</p>
+          <p>0/10,000 CHAVS minted</p>
         </div>
       )}
 

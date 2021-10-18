@@ -4,14 +4,15 @@
 .head8 {
   position: absolute;
   bottom: 0;
-  left: -8%;
-  width: 36vw;
+  left: -10%;
+  width: 35vw;
 }
 .head9 {
   position: absolute;
   bottom: 0;
-  right: -8%;
-  width: 36vw;
+  right: 0;
+  width: 20vw !important;
+  height: auto;
 }
 .sapcerTop {
   height: 20vh;
@@ -29,8 +30,8 @@
   .head9 {
     position: absolute;
     bottom: 0;
-    right: -10%;
-    width: 45vw;
+    right: 0;
+    width: 25vw !important;
   }
   .sapcerTop {
     height: 5vh;

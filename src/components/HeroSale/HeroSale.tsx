@@ -4,15 +4,13 @@ import MainButton from "../MainBtn/MainBtn";
 import Title from "../Title/Title";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import { Link } from "react-router-dom";
 
-interface Props {
-  showHeroSale: any;
-  setShowHeroSale: any;
-}
+interface Props {}
 
-const HeroSale: React.FC<Props> = ({ showHeroSale, setShowHeroSale }) => {
+const HeroSale: React.FC<Props> = () => {
   const [Sale, setSale] = useState(false);
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="heroSale">
       {Sale ? (
@@ -32,11 +30,9 @@ const HeroSale: React.FC<Props> = ({ showHeroSale, setShowHeroSale }) => {
             <br />
             <p>Minting will begin at 20:00 UTC on the 16th of November 2021</p>
             <div style={{ marginTop: "15vh" }} />
-            <MainButton
-              text="Back to home"
-              orangeHover
-              onClick={() => setShowHeroSale(false)}
-            />
+            <Link to="/">
+              <MainButton text="Back to home" orangeHover />
+            </Link>
           </div>
         </div>
       )}

@@ -1,8 +1,8 @@
 .mainBtn {
   color: white;
   background: black;
-  padding: 0.7rem 1.4rem;
-  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
   border: none;
   margin: 0;
   text-transform: uppercase;
@@ -13,9 +13,11 @@
 }
 .blueHover:hover {
   background: var(--blue);
+  cursor: pointer;
 }
 .orangeHover:hover {
   background: var(--orange);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

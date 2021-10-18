@@ -26,13 +26,16 @@
 }
 
 .navItem:hover {
-  color: dodgerblue;
+  color: var(--blue);
+  cursor: pointer;
 }
 .icon {
   font-size: 1.5rem;
+  color: white;
 }
 .icon:hover {
-  color: dodgerblue;
+  color: var(--blue);
+  cursor: pointer;
 }
 
 /* nav_mob */
@@ -58,7 +61,7 @@
   z-index: 999;
 }
 .active {
-  height: 40vh;
+  height: 35vh;
 }
 .navMob_item {
   padding: 5px 10px;
@@ -68,7 +71,7 @@
   text-decoration: none;
 }
 .navMob_item:hover {
-  background-color: var(--orange);
+  background-color: var(--blue);
 }
 .navMob_icon {
   width: 2rem;
@@ -78,6 +81,14 @@
   margin-right: 1rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding: 0 5%;
+  }
+  .routes {
+    width: auto;
+  }
+}
 @media only screen and (max-width: 600px) {
   .nav {
     display: none;
@@ -92,5 +103,11 @@
   }
   .nav_menu {
     top: 9vh;
+  }
+  .icons {
+    margin-left: 2.5rem;
+  }
+  .routes {
+    width: 0;
   }
 }

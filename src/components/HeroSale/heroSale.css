@@ -45,7 +45,7 @@ p {
 
 @media only screen and (max-width: 1024px) {
   .heroSale {
-    height: 50vh;
+    height: 90vh;
   }
   .head1 {
     left: 5%;
@@ -58,7 +58,7 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .heroSale {
-    height: 90vh;
+    height: 100vh;
   }
   .head1 {
     left: 5%;

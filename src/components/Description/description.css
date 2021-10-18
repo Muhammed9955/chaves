@@ -13,8 +13,9 @@
   width: 35vw;
 }
 .description_content p {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  width: 28vw;
 }
 .description_content h1 {
   text-transform: uppercase;
@@ -28,6 +29,9 @@
   .description_img {
     width: 50%;
   }
+  .description_content p {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .description {
@@ -39,10 +43,17 @@
   .description_content {
     width: 100%;
   }
+  .description_content p {
+    width: 100%;
+  }
   .description_img {
     width: 90%;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .description p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
 }

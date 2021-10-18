@@ -24,4 +24,11 @@
     width: 90%;
     margin: 0 0 10vh 0;
   }
+  .chavsInfo p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .chavsInfo {
+    padding: 0 2rem;
+  }
 }
