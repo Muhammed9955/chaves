@@ -19,7 +19,7 @@ const Home: React.FC<Props> = ({
 }) => {
   return (
     <div className="App">
-      {/* <Hero /> */}
+      <Hero />
       <ChavsBody
         aboutUsRef={aboutUsRef}
         utilityRef={utilityRef}
