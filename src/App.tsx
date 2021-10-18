@@ -28,7 +28,7 @@ function App() {
     visionRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToMissionStatement = () =>
     missionStatement.current.scrollIntoView({ behavior: "smooth" });
-
+  // console.log({})
   return (
     <div className="App">
       <Router>
